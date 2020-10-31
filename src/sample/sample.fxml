@@ -9,29 +9,42 @@
 <GridPane fx:controller="sample.SampleController" prefHeight="800" prefWidth="800"
           xmlns:fx="http://javafx.com/fxml" >
 
+
+    <Label text="RED" textFill="red"
+           GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
     <Slider fx:id="Red"
             blockIncrement="1" majorTickUnit="50"
-            min="1" max="255" value="0"
-            minorTickCount="1" showTickLabels="true" showTickMarks="true"
-            GridPane.columnIndex="0" GridPane.rowIndex="1"/>
-
-    <Slider fx:id="Green"
-            blockIncrement="1" majorTickUnit="50"
-            min="1" max="255" value="0"
+            min="1" max="255"
             minorTickCount="1" showTickLabels="true" showTickMarks="true"
             GridPane.columnIndex="0" GridPane.rowIndex="2"/>
 
+    <Label text="GREEN" textFill="limegreen"
+           GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+
+    <Slider fx:id="Green"
+            blockIncrement="1" majorTickUnit="50"
+            min="1" max="255"
+            minorTickCount="1" showTickLabels="true" showTickMarks="true"
+            GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+
+    <Label text="BLUE" textFill="royalblue"
+           GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+
     <Slider fx:id="Blue"
             blockIncrement="1" majorTickUnit="50"
-            min="1" max="255" value="0"
+            min="1" max="255"
             minorTickCount="1" showTickLabels="true" showTickMarks="true"
-            GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            GridPane.columnIndex="0" GridPane.rowIndex="6" />
+    <Canvas fx:id="ColorBox"
+            layoutX="4.0" layoutY="4.0" width="100" height="100"
+            GridPane.columnIndex="0" GridPane.rowIndex="7" GridPane.rowSpan="2"/>
 
     <Button text="Clear image" layoutX="26.0" layoutY="32.0" onAction="#clearImage"
             GridPane.columnIndex="0" GridPane.rowIndex="0"/>
 
     <Canvas fx:id="canvas"
-             layoutX="4.0" layoutY="4.0" width="300" height="300"
+             layoutX="4.0" layoutY="4.0" width="500" height="500"
             GridPane.columnIndex="1" GridPane.rowSpan="10"/>
 
 
